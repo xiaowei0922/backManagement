@@ -1,0 +1,17 @@
+import { get, post } from './http';
+
+export const login = p => post('/admin/index/login', p)
+export const userList = p => get('/admin/users/index', p)
+export const userDetail = p => get('/admin/users/view', p)
+export const userAdd = p => post('/admin/users/saveUser', p)
+export const userDel = p => get('/admin/users/delUser', p)
+export const roleList = p => get('/admin/roles/index', p)
+export const roleAdd = p => post('/admin/roles/saveRole', p)
+export const roleDel = p => get('/admin/roles/delRole', p)
+export const roleDetail = p => get('/admin/roles/detail', p)
+export const roleIdName = p => get('/admin/roles/getRoleIdNameList', p)
+export const permissionList = p => get('/admin/permissions/index', p)
+export const permissionAdd = p => post('/admin/permissions/savePermission', p)
+export const permissionDel = p => get('/admin/permissions/delPermission', p)
+export const permissionMenu = p => get('/admin/permissions/getMenuList', p)
+export const permissionTree = p => get('/admin/permissions/getPermissionList', p)
